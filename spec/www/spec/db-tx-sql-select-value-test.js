@@ -1844,7 +1844,7 @@ var mytests = function() {
                 expect(rs.rows.item(0).myresult).not.toBeDefined(); // not defined iOS/macOS
               else
                 expect(rs.rows.item(0).myresult).toBeDefined();
-              // TBD actual value (???)
+              // XXX TBD actual value (???)
 
               // Close (plugin only) & finish:
               (isWebSql) ? done() : db.close(done, done);
